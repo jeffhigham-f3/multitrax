@@ -1,0 +1,2 @@
+-- Seed data is intentionally empty for the MVP.
+-- Add local fixtures here if needed.

@@ -1,0 +1,15 @@
+include:
+  - package:very_good_analysis/analysis_options.yaml
+  - package:bloc_lint/recommended.yaml
+analyzer:
+  exclude:
+    - lib/l10n/gen/*
+linter:
+  rules:
+    avoid_catches_without_on_clauses: false
+    avoid_redundant_argument_values: false
+    directives_ordering: false
+    lines_longer_than_80_chars: false
+    public_member_api_docs: false
+    sort_constructors_first: false
+    unnecessary_lambdas: false

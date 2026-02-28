@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Multitrax iOS (development)",
+      "type": "dart",
+      "request": "launch",
+      "cwd": "apps/multitrax_app",
+      "program": "lib/main_development.dart",
+      "toolArgs": [
+        "--flavor",
+        "development",
+        "-d",
+        "ios",
+        "--dart-define=SUPABASE_URL=http://127.0.0.1:54321",
+        "--dart-define=SUPABASE_ANON_KEY=sb_publishable_ACJWlzQHlZjBrEguHvfOxg_3BJgxAaH"
+      ]
+    },
+    {
+      "name": "Multitrax (development)",
+      "type": "dart",
+      "request": "launch",
+      "cwd": "apps/multitrax_app",
+      "program": "lib/main_development.dart",
+      "toolArgs": [
+        "--flavor",
+        "development",
+        "--dart-define=SUPABASE_URL=http://127.0.0.1:54321",
+        "--dart-define=SUPABASE_ANON_KEY=sb_publishable_ACJWlzQHlZjBrEguHvfOxg_3BJgxAaH"
+      ]
+    },
+    {
+      "name": "Multitrax (staging)",
+      "type": "dart",
+      "request": "launch",
+      "cwd": "apps/multitrax_app",
+      "program": "lib/main_staging.dart",
+      "toolArgs": ["--flavor", "staging"]
+    },
+    {
+      "name": "Multitrax (production)",
+      "type": "dart",
+      "request": "launch",
+      "cwd": "apps/multitrax_app",
+      "program": "lib/main_production.dart",
+      "toolArgs": ["--flavor", "production"]
+    }
+  ]
+}
